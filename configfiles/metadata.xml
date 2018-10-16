@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Entities>
+    <ExtensionPackages>
+        <ExtensionPackage dependsOn="" description="" minimumThingWorxVersion="8.0.0" name="OpcTagBinder" packageVersion="1.2.2" vendor="Thingworx Labs">
+            <JarResources>
+                <FileResource description="" file="opctagbinder.jar" type="JAR"/>
+            </JarResources>
+        </ExtensionPackage>
+    </ExtensionPackages>
+    <Resources>
+        <Resource aspect.isCreatable="false" aspect.isEditableExtensionObject="false" className="com.thingworx.resources.OpcTagBinder.OpcTagBinder" description="" name="OpcTagBinder"/>
+    </Resources>
+    <DataShapes>
+    <DataShape baseDataShape="" description="" documentationContent="" homeMashup="" lastModifiedDate="2018-10-03T10:39:21.004-04:00" name="PTC.Factory.OpcTagMappingDataShape" projectName="PTC.Factory.OpcTagMapping" tags="">
+        <avatar />
+        <DesignTimePermissions>
+            <Create />
+            <Read />
+            <Update />
+            <Delete />
+            <Metadata />
+        </DesignTimePermissions>
+        <RunTimePermissions />
+        <VisibilityPermissions>
+            <Visibility />
+        </VisibilityPermissions>
+        <ConfigurationTableDefinitions />
+        <ConfigurationTables />
+        <FieldDefinitions>
+        	<FieldDefinition aspect.isPrimaryKey="false" baseType="STRING" description="" name="thingName" ordinal="1" />
+        	<FieldDefinition aspect.isPrimaryKey="false" baseType="STRING" description="" name="thingTemplate" ordinal="2" />
+        	<FieldDefinition aspect.isPrimaryKey="false" baseType="STRING" description="" name="tagAddress" ordinal="3" />
+        	<FieldDefinition aspect.isPrimaryKey="false" baseType="STRING" description="" name="propertyName" ordinal="4" />
+        	<FieldDefinition aspect.isPrimaryKey="false" baseType="STRING" description="" name="industrialDataType" ordinal="5" />
+        	<FieldDefinition aspect.isPrimaryKey="false" baseType="STRING" description="" name="propertyDescription" ordinal="6" />
+        	<FieldDefinition aspect.defaultValue="false" aspect.isPrimaryKey="false" baseType="BOOLEAN" description="" name="readOnly" ordinal="7" />
+        	<FieldDefinition aspect.defaultValue="false" aspect.isPrimaryKey="false" baseType="BOOLEAN" description="" name="logged" ordinal="8" />
+        	<FieldDefinition aspect.defaultValue="VALUE" aspect.isPrimaryKey="false" baseType="STRING" description="" name="dataChangeType" ordinal="9" />
+        	<FieldDefinition aspect.defaultValue="0.0" aspect.isPrimaryKey="false" baseType="NUMBER" description="" name="dataChangeThreshold" ordinal="10" />
+        	<FieldDefinition aspect.defaultValue="0" aspect.isPrimaryKey="false" baseType="INTEGER" description="" name="timeout" ordinal="11" />
+        	<FieldDefinition aspect.defaultValue="VALUE" aspect.isPrimaryKey="false" baseType="STRING" description="" name="pushType" ordinal="12" />
+        	<FieldDefinition aspect.defaultValue="0.0" aspect.isPrimaryKey="false" baseType="NUMBER" description="" name="pushThreshold" ordinal="13" />
+            <FieldDefinition aspect.defaultValue="0" aspect.isPrimaryKey="false" baseType="INTEGER" description="" name="cacheTime" ordinal="14" />
+            <FieldDefinition aspect.defaultValue="1000" aspect.isPrimaryKey="false" baseType="INTEGER" description="" name="scanRate" ordinal="15" />
+            <FieldDefinition aspect.defaultValue="Static" aspect.isPrimaryKey="false" baseType="STRING" description="" name="tagType" ordinal="16" />
+            <FieldDefinition aspect.isPrimaryKey="false" baseType="STRING" description="" name="thingDescription" ordinal="17" />
+            <FieldDefinition aspect.isPrimaryKey="false" baseType="STRING" description="There are to tag the Thingworx Thing " name="modelTags" ordinal="18" />
+            <FieldDefinition aspect.isPrimaryKey="false" baseType="STRING" description="" name="projectName" ordinal="19" />
+            <FieldDefinition aspect.isPrimaryKey="false" baseType="STRING" description="" name="parent" ordinal="20" />
+            <FieldDefinition aspect.isPrimaryKey="false" baseType="STRING" description="" name="parentTemplate" ordinal="21" />    
+        </FieldDefinitions>
+        <ConfigurationChanges></ConfigurationChanges>
+    </DataShape>
+</DataShapes>
+</Entities>
