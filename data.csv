@@ -1,0 +1,2 @@
+thingName,thingTemplate,tagAddress,propertyName,baseType,industrialDataType,propertyDescription,readOnly,logged,timeout,pushType,pushThreshold,cacheTime,scanRate,tagType,thingDescription,modelTags,projectName
+Line1.SinkingEDM,RemoteThing,LineGroup1.1-1_SinkingEDM.Temperature,Temperature,NUMBER,Float,,,,,,,,,,,,
