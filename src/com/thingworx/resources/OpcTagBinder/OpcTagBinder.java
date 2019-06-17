@@ -175,19 +175,23 @@ public class OpcTagBinder extends Resource {
 			if (!row.getStringValue("scanRate").isEmpty()) { scanRate = (Integer)row.getValue("scanRate"); }
 			if (!row.getStringValue("tagType").isEmpty()) {	tagType = row.getStringValue("tagType"); }
 
+			if (Character.isDigit(sourceName.charAt(0))) {
+				//TODO: handle invalid characters for property names
+				sourceName = "_" + sourceName;
+				
+			}
 			
 			if (!opcThing.hasProperty(sourceName)) {
-				//TODO: handle invalid characters for property names
-				if (Character.isDigit(sourceName.charAt(0))) {
-					sourceName = "_" + sourceName;
-				}			
 								
-				opcThing.AddPropertyDefinition(sourceName, propertyDescription, baseType, "", "", readOnly, persistent, logged, dataChangeType, 
+				try { opcThing.AddPropertyDefinition(sourceName, propertyDescription, baseType, "", "", readOnly, persistent, logged, dataChangeType, 
 												dataChangeThreshold, remote, remotePropertyName, timeout, pushType, pushThreshold, defaultValue,
 												remoteAspects);		
 				
 				//this shouldn't be necessary, but it turns out that it is!
-				opcThing.RestartThing();					
+				opcThing.RestartThing();	
+				} catch (Exception err) {
+					//this shouldnt happen
+				}
 			}
 			
 			///bind our remote property. For some reasons remote aspects are  json object instead of an AspectCollection. it is a mystery.

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <Entities>
     <ExtensionPackages>
-        <ExtensionPackage dependsOn="" description="" minimumThingWorxVersion="8.0.0" name="OpcTagBinder" packageVersion="1.2.2" vendor="Thingworx Labs">
+        <ExtensionPackage dependsOn="" description="" minimumThingWorxVersion="8.0.0" name="OpcTagBinder" packageVersion="1.2.3" vendor="Thingworx Labs">
             <JarResources>
                 <FileResource description="" file="opctagbinder.jar" type="JAR"/>
             </JarResources>
